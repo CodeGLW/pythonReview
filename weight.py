@@ -1,12 +1,10 @@
 weight = float(input("Please enter your weight "))
-unit = input("Are you using kilograms (k) or pounds (l)? ")
-if unit == ("L") or unit == ("l"):
+unit = input("Are you using kilograms (K) or pounds (L)? ")
+if unit.upper() == ("L"):
     newWeight = weight/2.2
     newWeight = format(newWeight, '.2f')
-    unit = ("kilograms")
-elif unit == ("K") or unit == ("k"):
+    print("Your converted weight is " + newWeight + " kilograms.") 
+else:
     newWeight = weight*2.2
     newWeight = format(newWeight, '.2f')
-    unit = ("pounds")
-
-print("Your converted weight is " + str(newWeight) + " " + str(unit) + ".")
+    print("Your converted weight is " + newWeight + "pounds.")
