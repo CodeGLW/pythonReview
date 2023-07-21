@@ -11,7 +11,15 @@ friends.append("Riley")
 friends.insert(5, "Charlie")
 friends.remove("Charlie")
 print("This statement is " + str(("Logan" in friends)) + ": Logan is my friend")
-print("Woahhh... I have " + str(len(friends)) + " friends")
+print("Lets count how many friends I have (starting from 3 since Oviya and Daniel are obvious)!")
+friendAmount = range(2, len(friends))
+for name in friendAmount:
+    print(int(name+1))
+print("Uhhh that's pretty long; can you skip a few?")
+friendAmount = range(2, len(friends), 5)
+for name in friendAmount:
+    print(int(name+1))
+print("Woahhh... I have " + str(len(friends)) + " friends total!")
 
 
 friends.clear()
